@@ -6,11 +6,11 @@ $ldapconn = ldap_connect($ldaphost, $ldapport)
       or die('Unabled to connect to the server');
 ldap_set_option( $ldapconn, LDAP_OPT_PROTOCOL_VERSION, 3);
 ldap_set_option( $ldapconn, LDAP_OPT_REFERRALS, 0);
-$samaccountname = 'j-yoyamaguchi';
+$samaccountname = 'j-yogawa';
 
 
 if($ldapconn){
-     $ldapbind = ldap_bind($ldapconn, 'j-yoyamaguchi@plus.co.jp', 'DnF+Ey4C');
+     $ldapbind = ldap_bind($ldapconn, 'j-yogawa@plus.co.jp', 'yu000811oo');
      if($ldapbind){
            $bind_message = 'LDAP bind succeeded';
            echo $bind_message."\n";
